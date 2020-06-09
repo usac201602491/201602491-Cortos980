@@ -1,7 +1,7 @@
-N = 5
+N = 49
 lista = []
 
-#archivo = open('collatz.txt','w')
+archivo = open('collatz.txt','w')
 
 for o in range(2,N):
     num = o
@@ -21,10 +21,10 @@ for o in range(2,N):
             num = int(3*num+1)
 
     if(num==1):
-        lista.append(num)
+        lista.append(num)        
+    print(lista)
+    archivo.write(str(lista))
+    lista.clear()    
+archivo.close()
 
-    for i in lista:
-       # archivo.write(str(i))
-        print(i)
-#archivo.close()
-
+    

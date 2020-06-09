@@ -1,4 +1,4 @@
-N = 49
+N = 491
 lista = []
 
 archivo = open('collatz.txt','w')
@@ -24,6 +24,9 @@ for o in range(2,N):
         lista.append(num)        
     print(lista)
     archivo.write(str(lista))
+    archivo.write(str("\n"))
+    archivo.write(str("\n"))
+    archivo.write(str("\n"))
     lista.clear()    
 archivo.close()
 

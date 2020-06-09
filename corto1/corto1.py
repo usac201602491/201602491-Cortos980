@@ -3,7 +3,7 @@ lista = []
 
 archivo = open('collatz.txt','w')
 
-for o in range(2,N):
+for o in range(2,N+1):
     num = o
 
     def esPar(num):
@@ -14,14 +14,14 @@ for o in range(2,N):
 
     while num!=1:
         if(esPar(num)):
-            lista.append(num)
-            num=num/2          
+            lista.append(int(num))
+            num=int(num/2)
         else:
-            lista.append(num)
+            lista.append(int(num))
             num = int(3*num+1)
 
     if(num==1):
-        lista.append(num)        
+        lista.append(int(num))        
     print(lista)
     archivo.write(str(lista))
     archivo.write(str("\n"))

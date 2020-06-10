@@ -1,4 +1,4 @@
-N = 491 # Limite de iteraciones
+N = 491 # Limite de iteraciones para serie
 lista = []
 
 archivo = open('collatz.txt','w')
